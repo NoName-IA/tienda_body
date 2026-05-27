@@ -1,0 +1,176 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Boty — Natural Skincare Theme */
+:root {
+  /* Brand Colors: Sand, Cream, Warm Beige, Olive Green, Soft Taupe, Charcoal */
+  --background: #F7F4EF; /* Cream */
+  --foreground: #2C2C2C; /* Charcoal */
+  --card: #EDE6DC; /* Sand */
+  --card-foreground: #2C2C2C;
+  --popover: #F7F4EF;
+  --popover-foreground: #2C2C2C;
+  --primary: #4F5B3A; /* Olive Green */
+  --primary-foreground: #F7F4EF;
+  --secondary: #D8CFC4; /* Warm Beige */
+  --secondary-foreground: #2C2C2C;
+  --muted: #EDE6DC; /* Sand */
+  --muted-foreground: #6B6560;
+  --accent: #B8ADA3; /* Soft Taupe */
+  --accent-foreground: #2C2C2C;
+  --destructive: #A65D57;
+  --destructive-foreground: #F7F4EF;
+  --border: #D8CFC4;
+  --input: #EDE6DC;
+  --ring: #4F5B3A;
+  --chart-1: #4F5B3A;
+  --chart-2: #B8ADA3;
+  --chart-3: #D8CFC4;
+  --chart-4: #8B9A6D;
+  --chart-5: #6B6560;
+  --radius: 1rem;
+  --sidebar: #EDE6DC;
+  --sidebar-foreground: #2C2C2C;
+  --sidebar-primary: #4F5B3A;
+  --sidebar-primary-foreground: #F7F4EF;
+  --sidebar-accent: #D8CFC4;
+  --sidebar-accent-foreground: #2C2C2C;
+  --sidebar-border: #D8CFC4;
+  --sidebar-ring: #4F5B3A;
+}
+
+.dark {
+  --background: #2C2C2C;
+  --foreground: #F7F4EF;
+  --card: #3D3D3D;
+  --card-foreground: #F7F4EF;
+  --popover: #2C2C2C;
+  --popover-foreground: #F7F4EF;
+  --primary: #8B9A6D;
+  --primary-foreground: #2C2C2C;
+  --secondary: #4A4540;
+  --secondary-foreground: #F7F4EF;
+  --muted: #3D3D3D;
+  --muted-foreground: #B8ADA3;
+  --accent: #4A4540;
+  --accent-foreground: #F7F4EF;
+  --destructive: #A65D57;
+  --destructive-foreground: #F7F4EF;
+  --border: #4A4540;
+  --input: #3D3D3D;
+  --ring: #8B9A6D;
+  --chart-1: #8B9A6D;
+  --chart-2: #B8ADA3;
+  --chart-3: #6B6560;
+  --chart-4: #4F5B3A;
+  --chart-5: #D8CFC4;
+  --sidebar: #3D3D3D;
+  --sidebar-foreground: #F7F4EF;
+  --sidebar-primary: #8B9A6D;
+  --sidebar-primary-foreground: #2C2C2C;
+  --sidebar-accent: #4A4540;
+  --sidebar-accent-foreground: #F7F4EF;
+  --sidebar-border: #4A4540;
+  --sidebar-ring: #8B9A6D;
+}
+
+@theme inline {
+  --font-sans: 'DM Sans', 'DM Sans Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Playfair Display Fallback', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 8px);
+  --radius-2xl: calc(var(--radius) + 16px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom soft shadow utility */
+.boty-shadow {
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+/* Smooth transitions */
+.boty-transition {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Blur in animation */
+@keyframes blur-in {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.animate-blur-in {
+  animation: blur-in 0.8s ease-out;
+}
+
+/* Scale fade in animation */
+@keyframes scale-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-fade-in {
+  animation: scale-fade-in 0.6s ease-out;
+}

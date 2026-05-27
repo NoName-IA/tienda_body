@@ -20,10 +20,10 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Boty — Cuidado de Piel Natural',
-  description: 'Productos premium de cuidado de piel natural y corporal. Brilla suavemente con Boty.',
+  title: 'Boty — Natural Skincare',
+  description: 'Premium natural and body skincare products. Glow gently with Boty.',
   generator: 'v0.app',
-  keywords: ['cuidado de piel', 'natural', 'orgánico', 'belleza', 'cuidado corporal', 'libre de crueldad'],
+  keywords: ['skincare', 'natural', 'organic', 'beauty', 'body care', 'cruelty-free'],
   icons: {
     icon: [
       {

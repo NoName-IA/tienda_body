@@ -13,18 +13,18 @@ const products = [
   // Serums
   {
     id: "radiance-serum",
-    name: "Sérum Radiante",
-    description: "Fórmula iluminadora con Vitamina C",
+    name: "Radiance Serum",
+    description: "Illuminating formula with Vitamin C",
     price: 68,
     originalPrice: null,
     image: "/images/products/serum-bottles-1.png",
-    badge: "Más Vendido",
+    badge: "Bestseller",
     category: "serum" as Category
   },
   {
     id: "hydrating-serum",
-    name: "Sérum Hidratante",
-    description: "Impulso de hidratación con ácido hialurónico",
+    name: "Hydrating Serum",
+    description: "Hydration boost with hyaluronic acid",
     price: 62,
     originalPrice: null,
     image: "/images/products/eye-serum-bottles.png",
@@ -33,29 +33,29 @@ const products = [
   },
   {
     id: "age-defense-serum",
-    name: "Sérum Anti-Edad",
-    description: "Complejo de retinol y péptidos",
+    name: "Age Defense Serum",
+    description: "Retinol and peptide complex",
     price: 78,
     originalPrice: null,
     image: "/images/products/amber-dropper-bottles.png",
-    badge: "Nuevo",
+    badge: "New",
     category: "serum" as Category
   },
   {
     id: "glow-serum",
-    name: "Sérum Luminoso",
-    description: "Impulso iluminador con niacinamida",
+    name: "Luminous Glow Serum",
+    description: "Illuminating boost with niacinamide",
     price: 58,
     originalPrice: 68,
     image: "/images/products/spray-bottles.png",
-    badge: "Oferta",
+    badge: "Sale",
     category: "serum" as Category
   },
   // Creams
   {
     id: "hydra-cream",
-    name: "Crema Hidra",
-    description: "Hidratación profunda con ácido hialurónico",
+    name: "Hydra Cream",
+    description: "Deep hydration with hyaluronic acid",
     price: 54,
     originalPrice: null,
     image: "/images/products/cream-jars-colored.png",
@@ -64,28 +64,28 @@ const products = [
   },
   {
     id: "gentle-cleanser",
-    name: "Limpiador Suave",
-    description: "Lavado botánico calmante",
+    name: "Gentle Cleanser",
+    description: "Calming botanical wash",
     price: 38,
     originalPrice: 48,
     image: "/images/products/tube-bottles.png",
-    badge: "Oferta",
+    badge: "Sale",
     category: "cream" as Category
   },
   {
     id: "night-cream",
-    name: "Crema de Noche",
-    description: "Tratamiento restaurador nocturno",
+    name: "Night Cream",
+    description: "Restorative night treatment",
     price: 64,
     originalPrice: null,
     image: "/images/products/jars-wooden-lid.png",
-    badge: "Más Vendido",
+    badge: "Bestseller",
     category: "cream" as Category
   },
   {
     id: "day-cream-spf",
-    name: "Crema de Día SPF 30",
-    description: "Protección e hidratación",
+    name: "Day Cream SPF 30",
+    description: "Protection and hydration",
     price: 58,
     originalPrice: null,
     image: "/images/products/pump-bottles-lavender.png",
@@ -95,18 +95,18 @@ const products = [
   // Oils
   {
     id: "renewal-oil",
-    name: "Aceite Renovador",
-    description: "Mezcla nutritiva de aceites faciales",
+    name: "Renewal Oil",
+    description: "Nourishing facial oil blend",
     price: 72,
     originalPrice: null,
     image: "/images/products/amber-dropper-bottles.png",
-    badge: "Nuevo",
+    badge: "New",
     category: "oil" as Category
   },
   {
     id: "rosehip-oil",
-    name: "Aceite de Rosa Mosqueta",
-    description: "Extracto puro orgánico de rosa mosqueta",
+    name: "Rosehip Oil",
+    description: "Pure organic rosehip extract",
     price: 48,
     originalPrice: null,
     image: "/images/products/serum-bottles-1.png",
@@ -115,8 +115,8 @@ const products = [
   },
   {
     id: "jojoba-oil",
-    name: "Aceite de Jojoba",
-    description: "Equilibrante y ligero",
+    name: "Jojoba Oil",
+    description: "Balancing and lightweight",
     price: 42,
     originalPrice: null,
     image: "/images/products/spray-bottles.png",
@@ -125,20 +125,20 @@ const products = [
   },
   {
     id: "argan-oil",
-    name: "Aceite de Argán",
-    description: "Elixir de belleza marroquí",
+    name: "Argan Oil",
+    description: "Moroccan beauty elixir",
     price: 56,
     originalPrice: null,
     image: "/images/products/pump-bottles-cream.png",
-    badge: "Más Vendido",
+    badge: "Bestseller",
     category: "oil" as Category
   }
 ]
 
 const categories = [
-  { value: "cream" as Category, label: "Crema" },
-  { value: "oil" as Category, label: "Aceite" },
-  { value: "serum" as Category, label: "Sérum" }
+  { value: "cream" as Category, label: "Creams" },
+  { value: "oil" as Category, label: "Oils" },
+  { value: "serum" as Category, label: "Serums" }
 ]
 
 export function ProductGrid() {

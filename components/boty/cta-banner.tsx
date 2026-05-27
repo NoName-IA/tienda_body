@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { Leaf, Flower2, Globe } from "lucide-react"
+import { useLanguage } from "./language-context"
 
 export function CTABanner() {
+  const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
   const bannerRef = useRef<HTMLDivElement>(null)
 
@@ -48,24 +50,24 @@ export function CTABanner() {
           
           <div className="relative z-10 text-left max-w-2xl">
             <h3 className="text-4xl md:text-5xl text-white mb-4 lg:text-5xl">
-              100% Natural
+              {t("cta.natural")}
             </h3>
             <h3 className="text-3xl md:text-4xl lg:text-5xl text-white/70 mb-8">
-              100% Tú
+              {t("cta.you")}
             </h3>
             
             <div className="flex flex-col items-start gap-4">
               <div className="flex items-center gap-3 text-white/90">
                 <Leaf className="w-5 h-5 flex-shrink-0" strokeWidth={1} />
-                <span className="text-base">Sin Químicos Agresivos</span>
+                <span className="text-base">{t("cta.noharsh")}</span>
               </div>
               <div className="flex items-center gap-3 text-white/90">
                 <Flower2 className="w-5 h-5 flex-shrink-0" strokeWidth={1} />
-                <span className="text-base">Bondad a Base de Plantas</span>
+                <span className="text-base">{t("cta.plant")}</span>
               </div>
               <div className="flex items-center gap-3 text-white/90">
                 <Globe className="w-5 h-5 flex-shrink-0" strokeWidth={1} />
-                <span className="text-base">Abastecido Éticamente</span>
+                <span className="text-base">{t("cta.ethical")}</span>
               </div>
             </div>
           </div>

@@ -9,72 +9,72 @@ const testimonials = [
     name: "Sarah M.",
     location: "New York",
     rating: 5,
-    text: "Mi piel nunca se había sentido tan suave y nutrida. El Sérum Radiante ahora es parte permanente de mi rutina matutina.",
-    product: "Sérum Radiante"
+    text: "My skin has never felt so soft and nourished. The Radiance Serum is now a permanent part of my morning routine.",
+    product: "Radiance Serum"
   },
   {
     id: 2,
     name: "Emma L.",
     location: "Los Angeles",
     rating: 5,
-    text: "Por fin, cuidado de piel que realmente se siente natural. No más químicos agresivos. Mi piel sensible ama los productos Boty.",
-    product: "Limpiador Suave"
+    text: "Finally, skincare that truly feels natural. No more harsh chemicals. My sensitive skin loves Boty products.",
+    product: "Gentle Cleanser"
   },
   {
     id: 3,
     name: "Jessica R.",
     location: "Chicago",
     rating: 5,
-    text: "La Crema Hidra es absolutamente divina. Se absorbe maravillosamente y mantiene mi piel hidratada todo el día.",
-    product: "Crema Hidra"
+    text: "The Hydra Cream is absolutely divine. It absorbs beautifully and keeps my skin hydrated all day long.",
+    product: "Hydra Cream"
   },
   {
     id: 4,
     name: "Maria K.",
     location: "Miami",
     rating: 5,
-    text: "He probado innumerables sueros pero nada se compara al brillo que obtengo de Boty. Absolutamente transformador.",
-    product: "Sérum Luminoso"
+    text: "I've tried countless serums but nothing compares to the radiance I get from Boty. Absolutely transformative.",
+    product: "Luminous Glow Serum"
   },
   {
     id: 5,
     name: "Sophie T.",
     location: "Seattle",
     rating: 5,
-    text: "El empaque es hermoso y sostenible. Me siento bien sabiendo que elijo cuidado de piel ecológico.",
-    product: "Crema de Noche"
+    text: "The packaging is beautiful and sustainable. I feel good knowing I'm choosing eco-conscious skincare.",
+    product: "Night Cream"
   },
   {
     id: 6,
     name: "Anna P.",
     location: "Boston",
     rating: 5,
-    text: "Mi piel propensa al acné se ha aclarado desde que cambié a Boty. Los ingredientes naturales realmente hacen la diferencia.",
-    product: "Limpiador Suave"
+    text: "My acne-prone skin has cleared up since switching to Boty. The natural ingredients really do make a difference.",
+    product: "Gentle Cleanser"
   },
   {
     id: 7,
     name: "Claire B.",
     location: "Austin",
     rating: 5,
-    text: "La textura del Aceite Renovador es perfección. Se absorbe rápidamente y deja mi piel radiante.",
-    product: "Aceite Renovador"
+    text: "The texture of the Renewal Oil is perfection. It absorbs quickly and leaves my skin radiant.",
+    product: "Renewal Oil"
   },
   {
     id: 8,
     name: "Lily W.",
     location: "Portland",
     rating: 5,
-    text: "Me encanta que Boty sea libre de crueldad y vegano. Excelentes productos que se alinean con mis valores.",
-    product: "Crema Hidra"
+    text: "I love that Boty is cruelty-free and vegan. Excellent products that align with my values.",
+    product: "Hydra Cream"
   },
   {
     id: 9,
     name: "Rachel D.",
     location: "Denver",
     rating: 5,
-    text: "El aroma es tan sutil y natural. Sin fragancias abrumadoras, solo pura bondad botánica.",
-    product: "Sérum Radiante"
+    text: "The scent is so subtle and natural. No overpowering fragrances, just pure botanical goodness.",
+    product: "Radiance Serum"
   }
 ]
 
@@ -140,10 +140,10 @@ export function Testimonials() {
         {/* Header */}
         <div ref={headerRef} className="text-center mb-16">
           <span className={`text-sm tracking-[0.3em] uppercase text-primary mb-4 block ${headerVisible ? 'animate-blur-in opacity-0' : 'opacity-0'}`} style={headerVisible ? { animationDelay: '0.2s', animationFillMode: 'forwards' } : {}}>
-            Palabras Amables
+            Kind Words
           </span>
           <h2 className={`font-serif text-4xl leading-tight text-foreground text-balance md:text-7xl ${headerVisible ? 'animate-blur-in opacity-0' : 'opacity-0'}`} style={headerVisible ? { animationDelay: '0.4s', animationFillMode: 'forwards' } : {}}>
-            Amado por miles
+            Loved by thousands
           </h2>
         </div>
 

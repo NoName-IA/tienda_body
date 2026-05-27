@@ -47,27 +47,27 @@ export function CartDrawer() {
 
   const validateForm = () => {
     const errors: Record<string, string> = {}
-    if (!formData.name.trim()) errors.name = "El nombre es obligatorio"
+    if (!formData.name.trim()) errors.name = "Name is required"
     if (!formData.email.trim()) {
-      errors.email = "El correo electrónico es obligatorio"
+      errors.email = "Email is required"
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = "Correo electrónico inválido"
+      errors.email = "Invalid email address"
     }
-    if (!formData.address.trim()) errors.address = "La dirección de envío es obligatoria"
+    if (!formData.address.trim()) errors.address = "Shipping address is required"
     if (!formData.cardNumber.trim()) {
-      errors.cardNumber = "El número de tarjeta es obligatorio"
+      errors.cardNumber = "Card number is required"
     } else if (!/^\d{16}$/.test(formData.cardNumber.replace(/\s/g, ""))) {
-      errors.cardNumber = "Debe ser un número de tarjeta de 16 dígitos"
+      errors.cardNumber = "Must be a 16-digit card number"
     }
     if (!formData.cardExpiry.trim()) {
-      errors.cardExpiry = "La fecha de vencimiento es obligatoria"
+      errors.cardExpiry = "Expiry date is required"
     } else if (!/^\d{2}\/\d{2}$/.test(formData.cardExpiry)) {
-      errors.cardExpiry = "Usa el formato MM/AA"
+      errors.cardExpiry = "Use MM/YY format"
     }
     if (!formData.cardCvc.trim()) {
-      errors.cardCvc = "El CVC es obligatorio"
+      errors.cardCvc = "CVC is required"
     } else if (!/^\d{3,4}$/.test(formData.cardCvc)) {
-      errors.cardCvc = "Debe ser de 3 o 4 dígitos"
+      errors.cardCvc = "Must be 3 or 4 digits"
     }
 
     setFormErrors(errors)
@@ -122,7 +122,7 @@ export function CartDrawer() {
         <DrawerHeader className="border-b border-border/50 p-6 py-4 flex items-center justify-between">
           <div>
             {orderPlaced ? (
-              <DrawerTitle className="font-serif text-2xl">Pedido Completado</DrawerTitle>
+              <DrawerTitle className="font-serif text-2xl">Order Completed</DrawerTitle>
             ) : isCheckingOut ? (
               <div className="flex items-center gap-3">
                 <button 
@@ -133,12 +133,12 @@ export function CartDrawer() {
                 >
                   <ArrowLeft className="w-5 h-5 text-foreground" />
                 </button>
-                <DrawerTitle className="font-serif text-2xl">Pagar</DrawerTitle>
+                <DrawerTitle className="font-serif text-2xl">Checkout</DrawerTitle>
               </div>
             ) : (
               <>
-                <DrawerTitle className="font-serif text-2xl">Carrito</DrawerTitle>
-                <DrawerDescription>{itemCount} {itemCount === 1 ? 'artículo' : 'artículos'}</DrawerDescription>
+                <DrawerTitle className="font-serif text-2xl">Cart</DrawerTitle>
+                <DrawerDescription>{itemCount} {itemCount === 1 ? 'item' : 'items'}</DrawerDescription>
               </>
             )}
           </div>
@@ -153,10 +153,10 @@ export function CartDrawer() {
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6 animate-pulse">
                 <CheckCircle2 className="w-12 h-12 text-primary" />
               </div>
-              <h3 className="font-serif text-2xl text-foreground mb-2">¡Gracias por tu pedido!</h3>
+              <h3 className="font-serif text-2xl text-foreground mb-2">Thank you for your order!</h3>
               <p className="text-primary font-medium text-lg mb-4">#{orderNumber}</p>
               <p className="text-muted-foreground text-sm max-w-sm mb-6 leading-relaxed">
-                Hemos recibido tu pago y enviado un correo de confirmación a <span className="font-medium text-foreground">{formData.email}</span>. ¡Tus esenciales de cuidado de piel serán enviados pronto!
+                We've received your payment and sent a confirmation email to <span className="font-medium text-foreground">{formData.email}</span>. Your skincare essentials will be shipped soon!
               </p>
               <button
                 type="button"
@@ -166,7 +166,7 @@ export function CartDrawer() {
                 }}
                 className="w-full max-w-xs bg-primary text-primary-foreground py-4 rounded-full font-medium hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
               >
-                Seguir Comprando
+                Continue Shopping
               </button>
             </div>
           ) 
@@ -174,11 +174,11 @@ export function CartDrawer() {
           // Checkout Form State
           : isCheckingOut ? (
             <form onSubmit={handlePlaceOrder} className="space-y-5">
-              <h3 className="text-sm font-medium tracking-wide uppercase text-muted-foreground mb-1">Datos de envío</h3>
+              <h3 className="text-sm font-medium tracking-wide uppercase text-muted-foreground mb-1">Shipping Details</h3>
               
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="checkout-name" className="text-xs font-semibold text-foreground/80 mb-1 block">Nombre Completo</label>
+                  <label htmlFor="checkout-name" className="text-xs font-semibold text-foreground/80 mb-1 block">Full Name</label>
                   <input
                     type="text"
                     id="checkout-name"
@@ -192,7 +192,7 @@ export function CartDrawer() {
                 </div>
 
                 <div>
-                  <label htmlFor="checkout-email" className="text-xs font-semibold text-foreground/80 mb-1 block">Correo Electrónico</label>
+                  <label htmlFor="checkout-email" className="text-xs font-semibold text-foreground/80 mb-1 block">Email Address</label>
                   <input
                     type="email"
                     id="checkout-email"
@@ -206,7 +206,7 @@ export function CartDrawer() {
                 </div>
 
                 <div>
-                  <label htmlFor="checkout-address" className="text-xs font-semibold text-foreground/80 mb-1 block">Dirección de Envío</label>
+                  <label htmlFor="checkout-address" className="text-xs font-semibold text-foreground/80 mb-1 block">Shipping Address</label>
                   <input
                     type="text"
                     id="checkout-address"
@@ -222,12 +222,12 @@ export function CartDrawer() {
 
               <div className="border-t border-border/50 my-6 pt-5">
                 <h3 className="text-sm font-medium tracking-wide uppercase text-muted-foreground mb-3 flex items-center gap-2">
-                  <CreditCard className="w-4 h-4 text-primary" /> Datos de pago
+                  <CreditCard className="w-4 h-4 text-primary" /> Payment Details
                 </h3>
                 
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="checkout-card" className="text-xs font-semibold text-foreground/80 mb-1 block">Número de Tarjeta</label>
+                    <label htmlFor="checkout-card" className="text-xs font-semibold text-foreground/80 mb-1 block">Card Number</label>
                     <input
                       type="text"
                       id="checkout-card"
@@ -243,7 +243,7 @@ export function CartDrawer() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="checkout-expiry" className="text-xs font-semibold text-foreground/80 mb-1 block">Fecha de Vencimiento</label>
+                      <label htmlFor="checkout-expiry" className="text-xs font-semibold text-foreground/80 mb-1 block">Expiry Date</label>
                       <input
                         type="text"
                         id="checkout-expiry"

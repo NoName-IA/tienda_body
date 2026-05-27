@@ -26,57 +26,57 @@ const products: Record<string, {
 }> = {
   "radiance-serum": {
     id: "radiance-serum",
-    name: "Sérum Radiante",
-    tagline: "Ilumina tu brillo natural",
-    description: "Un sérum ligero y de rápida absorción infundido con Vitamina C y extractos botánicos. Diseñado para iluminar, unificar el tono de piel y revelar la luminosidad natural de tu piel.",
+    name: "Radiance Serum",
+    tagline: "Illuminate your natural glow",
+    description: "A lightweight, fast-absorbing serum infused with Vitamin C and botanical extracts. Designed to illuminate, even skin tone, and reveal your skin's natural radiance.",
     price: 68,
     originalPrice: null,
     image: "/images/products/serum.jpg",
     sizes: ["30ml", "50ml"],
-    details: "Nuestro Sérum Radiante combina 15% de Vitamina C estabilizada con aceite de semilla de rosa mosqueta y extracto de espino amarillo. La fórmula está diseñada para penetrar profundamente en la piel, atacando manchas oscuras y tono desigual mientras protege contra agresores ambientales. Adecuado para todo tipo de piel, este sérum es tu dosis diaria de luminosidad.",
-    howToUse: "Aplica 3-4 gotas en el rostro y cuello limpios por la mañana y por la noche. Presiona suavemente sobre la piel hasta que se absorba. Continúa con tu crema hidratante Boty favorita. Para mejores resultados, usa consistentemente durante 4-6 semanas.",
+    details: "Our Radiance Serum combines 15% stabilized Vitamin C with rosehip seed oil and sea buckthorn extract. The formula is designed to penetrate deeply into the skin, targeting dark spots and uneven tone while protecting against environmental stressors. Suitable for all skin types, this serum is your daily dose of luminosity.",
+    howToUse: "Apply 3-4 drops to clean face and neck morning and evening. Press gently onto skin until absorbed. Follow with your favorite Boty moisturizer. For best results, use consistently for 4-6 weeks.",
     ingredients: "Aqua, Ascorbic Acid (Vitamin C), Rosa Canina Seed Oil, Hippophae Rhamnoides Oil, Glycerin, Niacinamide, Tocopherol (Vitamin E), Ferulic Acid, Aloe Barbadensis Leaf Juice, Citrus Aurantium Dulcis Peel Oil, Lavandula Angustifolia Oil.",
     delivery: "Envío estándar gratis en pedidos superiores a $50. Envío express disponible al pagar. Todos los pedidos se envían en 1-2 días hábiles. Devoluciones aceptadas dentro de los 30 días de la compra si el producto está sin usar y sellado."
   },
   "hydra-cream": {
     id: "hydra-cream",
-    name: "Crema Hidra",
-    tagline: "Hidratación profunda, confort duradero",
-    description: "Una crema hidratante rica pero ligera que brinda hidratación intensa sin pesadez. Formulada con ácido hialurónico y mantecas botánicas para nutrición durante todo el día.",
+    name: "Hydra Cream",
+    tagline: "Deep hydration, lasting comfort",
+    description: "A rich yet lightweight hydrating cream that delivers intense moisture without heaviness. Formulated with hyaluronic acid and botanical butters for all-day nourishment.",
     price: 54,
     originalPrice: null,
     image: "/images/products/moisturizer.jpg",
     sizes: ["50ml", "100ml"],
-    details: "La Crema Hidra presenta ácido hialurónico de múltiples pesos para hidratar en cada nivel de la piel. La manteca de karité y el aceite de jojoba sellan la humedad mientras que el escualano proporciona un acabado sedoso y no graso. Perfecta para pieles normales a secas que buscan confort duradero.",
-    howToUse: "Después de la limpieza y el sérum, aplica una pequeña cantidad en el rostro y cuello. Masajea suavemente con movimientos ascendentes. Usa por la mañana y por la noche como el paso final de tu rutina de cuidado de la piel.",
+    details: "Hydra Cream features multi-weight hyaluronic acid to hydrate at every skin level. Shea butter and jojoba oil seal in moisture while squalane provides a silky, non-greasy finish. Perfect for normal to dry skin seeking lasting comfort.",
+    howToUse: "After cleansing and applying serum, apply a small amount to face and neck. Massage gently with upward strokes. Use morning and evening as the final step in your skincare routine.",
     ingredients: "Aqua, Butyrospermum Parkii Butter, Simmondsia Chinensis Seed Oil, Sodium Hyaluronate, Squalane, Glycerin, Cetearyl Alcohol, Calendula Officinalis Extract, Chamomilla Recutita Extract, Tocopherol.",
     delivery: "Envío estándar gratis en pedidos superiores a $50. Envío express disponible al pagar. Todos los pedidos se envían en 1-2 días hábiles. Devoluciones aceptadas dentro de los 30 días de la compra si el producto está sin usar y sellado."
   },
   "gentle-cleanser": {
     id: "gentle-cleanser",
-    name: "Limpiador Suave",
-    tagline: "Limpia sin compromisos",
-    description: "Un lavado botánico calmante que elimina impurezas respetando el equilibrio natural de tu piel. Perfecto para pieles sensibles y uso diario.",
+    name: "Gentle Cleanser",
+    tagline: "Clean without compromise",
+    description: "A calming botanical wash that removes impurities while respecting your skin's natural balance. Perfect for sensitive skin and daily use.",
     price: 38,
     originalPrice: 48,
     image: "/images/products/cleanser.jpg",
     sizes: ["150ml", "250ml"],
-    details: "Nuestro Limpiador Suave usa surfactantes derivados del coco que limpian eficazmente sin resecar. Enriquecido con manzanilla, extracto de avena y aloe vera, calma y suaviza mientras limpia. Con pH balanceado y probado por dermatólogos para pieles sensibles.",
-    howToUse: "Moja el rostro con agua tibia. Aplica una pequeña cantidad en las yemas de los dedos y masajea sobre el rostro con movimientos circulares. Enjuaga completamente. Usa por la mañana y por la noche.",
+    details: "Our Gentle Cleanser uses coconut-derived surfactants that cleanse effectively without drying. Enriched with chamomile, oat extract, and aloe vera, it soothes and softens while cleansing. pH-balanced and dermatologist-tested for sensitive skin.",
+    howToUse: "Dampen face with warm water. Apply a small amount to fingertips and massage over face in circular motions. Rinse thoroughly. Use morning and evening.",
     ingredients: "Aqua, Coco-Glucoside, Glycerin, Avena Sativa Kernel Extract, Aloe Barbadensis Leaf Juice, Chamomilla Recutita Extract, Panthenol, Allantoin, Citric Acid, Benzyl Alcohol, Potassium Sorbate.",
     delivery: "Envío estándar gratis en pedidos superiores a $50. Envío express disponible al pagar. Todos los pedidos se envían en 1-2 días hábiles. Devoluciones aceptadas dentro de los 30 días de la compra si el producto está sin usar y sellado."
   },
   "renewal-oil": {
     id: "renewal-oil",
-    name: "Aceite Renovador",
-    tagline: "Nutre profundamente, brilla eternamente",
-    description: "Una lujosa mezcla de aceites botánicos preciosos que nutren profundamente y restauran la piel durante la noche. Despierta con una piel más suave y flexible.",
+    name: "Renewal Oil",
+    tagline: "Nourish deeply, glow eternally",
+    description: "A luxurious blend of precious botanical oils that deeply nourish and restore skin overnight. Wake up to softer, more supple skin."
     price: 72,
     originalPrice: null,
     image: "/images/products/oil.jpg",
     sizes: ["30ml", "50ml"],
-    details: "El Aceite Renovador combina aceites de argán, rosa mosqueta y marula con vitamina E para una nutrición nocturna intensiva. Este aceite seco se absorbe rápidamente, dejando la piel suave sin residuos. Ideal para pieles maduras o deshidratadas que buscan restauración.",
-    howToUse: "Aplica 4-6 gotas en las palmas y calienta entre las manos. Presiona suavemente sobre el rostro y cuello como el paso final de tu rutina nocturna. También se puede mezclar con crema hidratante para mayor hidratación.",
+    details: "Renewal Oil combines argan, rosehip, and marula oils with Vitamin E for intensive overnight nourishment. This dry oil absorbs quickly, leaving skin soft with no residue. Ideal for mature or dehydrated skin seeking restoration.",
+    howToUse: "Apply 4-6 drops to palms and warm between hands. Press gently over face and neck as the final step of your nighttime routine. Can also be mixed with moisturizer for extra hydration.",
     ingredients: "Argania Spinosa Kernel Oil, Rosa Canina Seed Oil, Sclerocarya Birrea Seed Oil, Tocopherol, Rosa Damascena Flower Oil, Lavandula Angustifolia Oil, Helianthus Annuus Seed Oil, Limonene, Linalool.",
     delivery: "Envío estándar gratis en pedidos superiores a $50. Envío express disponible al pagar. Todos los pedidos se envían en 1-2 días hábiles. Devoluciones aceptadas dentro de los 30 días de la compra si el producto está sin usar y sellado."
   }
@@ -84,9 +84,9 @@ const products: Record<string, {
 
 const benefits = [
   { icon: Leaf, label: "100% Natural" },
-  { icon: Heart, label: "Libre de Crueldad" },
-  { icon: Recycle, label: "Ecológico" },
-  { icon: Award, label: "Aprobado por Expertos" }
+  { icon: Heart, label: "Cruelty-Free" },
+  { icon: Recycle, label: "Eco-Friendly" },
+  { icon: Award, label: "Expert Approved" }
 ]
 
 type AccordionSection = "details" | "howToUse" | "ingredients" | "delivery"
@@ -122,8 +122,8 @@ export default function ProductPage() {
     }, quantity);
 
     toast({
-      title: "Producto Agregado",
-      description: `${quantity}x ${product.name} (${selectedSize}) agregado a tu carrito.`,
+      title: "Added to Cart",
+      description: `${quantity}x ${product.name} (${selectedSize}) added to your cart.`,
     })
 
     setIsAdded(true)
@@ -131,10 +131,10 @@ export default function ProductPage() {
   }
 
   const accordionItems: { key: AccordionSection; title: string; content: string }[] = [
-    { key: "details", title: "Detalles", content: product.details },
-    { key: "howToUse", title: "Cómo Usar", content: product.howToUse },
-    { key: "ingredients", title: "Ingredientes", content: product.ingredients },
-    { key: "delivery", title: "Envío y Devoluciones", content: product.delivery }
+    { key: "details", title: "Details", content: product.details },
+    { key: "howToUse", title: "How to Use", content: product.howToUse },
+    { key: "ingredients", title: "Ingredients", content: product.ingredients },
+    { key: "delivery", title: "Shipping & Returns", content: product.delivery }
   ]
 
   return (
@@ -149,7 +149,7 @@ export default function ProductPage() {
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground boty-transition mb-8"
           >
             <ChevronLeft className="w-4 h-4" />
-            Volver a la Tienda
+            Back to Shop
           </Link>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -169,7 +169,7 @@ export default function ProductPage() {
               {/* Header */}
               <div className="mb-8">
                 <span className="text-sm tracking-[0.3em] uppercase text-primary mb-2 block">
-                  Esenciales Boty
+                  Boty Essentials
                 </span>
                 <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-3">
                   {product.name}
@@ -185,7 +185,7 @@ export default function ProductPage() {
                       <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                     ))}
                   </div>
-                  <span className="text-sm text-muted-foreground">(128 reseñas)</span>
+                  <span className="text-sm text-muted-foreground">(128 reviews)</span>
                 </div>
 
                 <p className="text-foreground/80 leading-relaxed">
@@ -205,7 +205,7 @@ export default function ProductPage() {
 
               {/* Size Selector */}
               <div className="mb-6">
-                <label className="text-sm font-medium text-foreground mb-3 block">Tamaño</label>
+                <label className="text-sm font-medium text-foreground mb-3 block">Size</label>
                 <div className="flex gap-3">
                   {product.sizes.map((size) => (
                     <button
@@ -226,7 +226,7 @@ export default function ProductPage() {
 
               {/* Quantity Selector */}
               <div className="mb-8">
-                <label className="text-sm font-medium text-foreground mb-3 block">Cantidad</label>
+                <label className="text-sm font-medium text-foreground mb-3 block">Quantity</label>
                 <div className="inline-flex items-center gap-4 bg-card rounded-full px-2 py-2 boty-shadow">
                   <button
                     type="button"

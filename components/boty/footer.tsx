@@ -44,33 +44,7 @@ export function Footer() {
               Natural skincare for those who believe beauty should feel as good as it looks.
             </p>
             <div className="flex gap-4">
-              <a
-                href="https://x.com/Kerroudjm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-foreground boty-transition boty-shadow"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://x.com/Kerroudjm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-foreground boty-transition boty-shadow"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="https://x.com/Kerroudjm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-foreground boty-transition boty-shadow"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-4 h-4" />
-              </a>
+              {/* Social links removed */}
             </div>
           </div>
 

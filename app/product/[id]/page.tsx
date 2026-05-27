@@ -70,7 +70,7 @@ const products: Record<string, {
     id: "renewal-oil",
     name: "Renewal Oil",
     tagline: "Nourish deeply, glow eternally",
-    description: "A luxurious blend of precious botanical oils that deeply nourish and restore skin overnight. Wake up to softer, more supple skin."
+    description: "A luxurious blend of precious botanical oils that deeply nourish and restore skin overnight. Wake up to softer, more supple skin.",
     price: 72,
     originalPrice: null,
     image: "/images/products/oil.jpg",
@@ -262,17 +262,17 @@ export default function ProductPage() {
                   {isAdded ? (
                     <>
                       <Check className="w-4 h-4" />
-                      Agregado al Carrito
+                      Added to Cart
                     </>
                   ) : (
-                    "Agregar al Carrito"
+                    "Add to Cart"
                   )}
                 </button>
                 <button
                   type="button"
                   className="flex-1 inline-flex items-center justify-center gap-2 bg-transparent border border-foreground/20 text-foreground px-8 py-4 rounded-full text-sm tracking-wide boty-transition hover:bg-foreground/5"
                 >
-                  Comprar Ahora
+                  Buy Now
                 </button>
               </div>
 

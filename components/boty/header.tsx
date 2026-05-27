@@ -86,16 +86,6 @@ export function Header() {
               <Search className="w-5 h-5" />
             </button>
 
-            {/* Language selector removed (site in English) */}
-            <span
-              className="p-2 text-foreground/70 boty-transition flex items-center gap-1"
-              aria-label="Language"
-              title="English"
-            >
-              <Globe className="w-5 h-5" />
-              <span className="text-xs font-medium">EN</span>
-            </span>
-
             <Link
               href="/login"
               className="hidden sm:block p-2 text-foreground/70 hover:text-foreground boty-transition"
